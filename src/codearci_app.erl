@@ -17,7 +17,8 @@ start(_Type, _Args) ->
 				{"/query/editions",eco_query_editions,[]},
 				{"/query/edition",eco_query_edition,[]},
 				{"/query/article",eco_query_article,[]},
-				{"/ark/translate",ark_translate,[]}
+				{"/ark/translate",ark_translate,[]},
+        {"/ark/lancode",ark_lancode,[]}
                 ]}
     ]),
     {ok, _} = cowboy:start_clear(my_http_listener,
